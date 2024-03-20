@@ -1,13 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
-// Definimos los elementos del menú
-$menuItems = [
-    'Inicio' => 'index.php',
-    'Servicios' => 'services.php',
-    'Nosotros' => 'about.php',
-    'Contacto' => 'contact.php'
-];
-
-// Función para generar el menú
+include("db.php");
 function generateMenu($items) {
     echo '<ul>';
     foreach ($items as $name => $link) {
@@ -20,3 +20,5 @@ function generateMenu($items) {
 // Llamamos a la función para generar el menú
 generateMenu($menuItems);
 ?>
+</body>
+</html>

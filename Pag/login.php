@@ -1,7 +1,8 @@
 <?php 
-include 'db.php';
-if($user == true ){
-  echo "Bienvenido ". $name;
+include ('../Componentes/db.php');
+if($islogin == true ){
+  header('Location: ../index.php');
+  exit; 
 }
 else{
   print  " <form>

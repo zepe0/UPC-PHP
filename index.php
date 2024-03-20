@@ -6,21 +6,31 @@
     <title>Document</title>
   </head>
   <body>
+    <?php include("Componentes/nav.php") ?>
+  <?php include("Componentes/db.php");?> 
     <div> 
-      <?php include("nav.php") ?>
-    </div>
-    <?php echo "<h1> Hello World </h1>" ?>
-    <div><?php include( "login.php")?></div>
-  
-  
-    <!-- para mostrar el resultado de una variable debemos utilizar la etiqueta <?= $variable ?> -->
-    <?= " tu nombre es $name" ?>
-    <div> 
-      <?php include("tabla.php")?>
-    </div>
-    <?php include("selec.php")?>
+     
 
-    <?php include("footer.php")?>
+      <?php include("Componentes/db.php");     
+   
+      if($islogin != true) { // Redirigir al navegador a otro documento
+       header('Location: Pag/login.php'); 
+       // Asegúrate de que el código que sigue no se ejecute después de la redirección.
+    }
+    else{
+      print "
+      <h1>Dentro  del area restringida! ${name}</h1>";
+    }
+     
+    ?>
+
+   
+    </div>
+   
+
+
+
+    <?php include("Componentes/footer.php")?>
 
  
   </body>
