@@ -1,0 +1,14 @@
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
