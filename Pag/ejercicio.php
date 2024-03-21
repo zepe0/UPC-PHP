@@ -16,7 +16,7 @@
     </p>" ?>
 
 
-      <!-- para mostrar el resultado de una variable debemos utilizar la etiqueta <?= $variable ?> -->
+      <!-- para mostrar el resultado de una variable debemos utilizar la etiqueta < ?= $variable ?> -->
     
       <div>
         <?php include("../Componentes/tabla.php")?>

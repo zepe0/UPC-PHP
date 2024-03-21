@@ -1,7 +1,10 @@
+<link  rel="stylesheet" href="../tabla.css" type="text/css"/>
+<link  rel="stylesheet" href="../style.css" type="text/css"/>
 <?php
 ini_set('display_errors', 1);
 ini_set('log_errors', 'On');
 error_reporting(E_ALL);
+include("../Componentes/nav.php");
 
 $productes = array(
     array(
@@ -26,12 +29,12 @@ print_r($productes);
 echo("-->");
 
  foreach ($productes as $indice => $value) {
-    echo "<table> \n";
-    echo "\t<tr>\n";
+  echo "<table> \n";
+  echo "\t<tr>\n";
   echo  "<td>". $value['nom'] . "</td>";
-  echo "<td><img src='{$value['imatge']}'> €</td>";
-  echo   "<td>".$value['preu']. "</td>";
-  echo "\t</tr> \n";
+  echo "<td><img src='{$value['imatge']}'> </td>";
+  echo "<td>".$value['preu']. " € </td>";
+  echo "</tr> ";
   echo "</table>";
 }
 
