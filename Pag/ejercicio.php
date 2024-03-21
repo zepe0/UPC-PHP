@@ -28,6 +28,7 @@
 
         echo "Encuentra  el número mayor, el menor y el total de la array : " ."<br>"."<br>";
         $elems = array(2,11,9,8,-1,33,2,45,1,2);
+        
         $max = 0;
         $min = 0;
         $total = 0;
@@ -40,11 +41,18 @@
             $max = $elem;
             $total = $elem + $total;
             $vuelta++;
-        } else if ($elem <= $min) {
+            
+            
+        } else if ($elem < $min) {
             $min = $elem;
+            $total = $elem + $total;
+            $vuelta++;
+          } else{
+            $total = $elem + $total;
             $vuelta++;
           }
-        echo  " En la vuelta ".$vuelta ." el max es ". $max . " y el min es " . $min . "<br>";
+        echo  " En la vuelta ".$vuelta ." el max es ". $max . " y el min es " . $min . "<br>".
+        "total es ".$total." elemento a mirar ".$elem. "<br>"."<br>" ;
          
       };
       echo  "El max es ". $max . " y el min es " . $min . "<br>".  
