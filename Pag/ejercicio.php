@@ -9,24 +9,34 @@
 <body >
     <?php include("../Componentes/nav.php") ?>
 <div id="main">
-    <?php echo "<h1> Hello World </h1>" ?>
-    <?php echo "<p> Para mostrar los logs desde consola desde la carpeta de apache/logs
-    comando: tail -f error.log 
-    
-    </p>" ?>
+    <?php echo "<div class='ejercicio'>
+      <h1> Hello World </h1> <br>
+      <p> Mostrando HTML por php con string </p>
+    </div>" ?>
+    <?php echo "
+    <div class='ejercicio'>
+      <h2>Comando para ver errores en consola</h2>
+      <p> Para mostrar los logs desde consola desde la carpeta de apache/logs
+      comando: <br> tail -f error.log
+      </p>
+    </div>
+    " ?>
 
 
       <!-- para mostrar el resultado de una variable debemos utilizar la etiqueta < ?= $variable ?> -->
     
-      <div>
+      <div class='ejercicio'>
         <?php include("../Componentes/tabla.php")?>
       </div>
       <?php include("../Componentes/selec.php")?>
 
-      <div>
+      <div class="ejercicio">
+        <h2>
+        Encuentra  el número mayor, el menor y el total de la array :
+        </h2>
         <?php 
 
-        echo "Encuentra  el número mayor, el menor y el total de la array : " ."<br>"."<br>";
+      
         $elems = array(2,11,9,8,-1,33,2,45,1,2);
         
         $max = 0;

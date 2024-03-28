@@ -6,8 +6,7 @@ $menuItems = [
     
     
     'Ejercicio' => '../Pag/ejercicio.php',
-    'Login' => '../Pag/login.php',
-    
+    'Login' => '../Pag/login.php',    
     'Tabla' => '../Pag/creartabla.php',
     'Librería' => '../Pag/lib.php'
 ];

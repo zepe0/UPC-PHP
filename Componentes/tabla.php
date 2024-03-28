@@ -1,3 +1,5 @@
+
+<h2> Creando Tabla de multiplicar con for</h2>
 <?php 
 
 $num2 = 1;
