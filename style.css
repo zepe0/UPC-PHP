@@ -1,39 +1,9 @@
-#main {
-    color: chocolate;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.2rem;
-    justify-content: center;
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-
-h2,
-h1 {
-    color: darkgreen;
-}
-
-#footer {
-    position: absolute;
-    bottom: 0;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-li {
-    list-style: none;
-}
-
-img {
-    width: 80px;
-}
-.ejercicio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+a {
+  margin-left: 10px;
 }
